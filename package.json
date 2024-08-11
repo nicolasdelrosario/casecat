@@ -11,6 +11,7 @@
 		"prettier-format": "prettier --config .prettierrc 'src/**/*.{js,jsx,ts,tsx}' --write"
 	},
 	"dependencies": {
+		"@headlessui/react": "^2.1.2",
 		"@kinde-oss/kinde-auth-nextjs": "2.3.6",
 		"@prisma/client": "^5.18.0",
 		"@radix-ui/react-aspect-ratio": "^1.1.0",
