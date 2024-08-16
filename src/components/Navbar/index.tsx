@@ -5,14 +5,14 @@ import Link from 'next/link'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 import { ArrowRightIcon } from '@radix-ui/react-icons'
 import { buttonVariants } from '../ui/button'
-import { ENV } from '@/config/env'
+import { env } from '@/config/env'
 
 import { MaxWidthWrapper } from '@/components'
 
 export default async function Navbar() {
 	const { getUser } = getKindeServerSession()
 	const USER = await getUser()
-	const isAdmin = USER?.email === ENV.ADMIN_EMAIL
+	const isAdmin = USER?.email === env.ADMIN_EMAIL
 
 	return (
 		<MaxWidthWrapper>
